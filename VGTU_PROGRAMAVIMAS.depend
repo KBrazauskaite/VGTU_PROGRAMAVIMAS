@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1552649641 source:z:\github\vgtu_programavimas\main.cpp
+	<iostream>
+	<vector>
+
