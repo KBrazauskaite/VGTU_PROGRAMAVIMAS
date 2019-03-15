@@ -1,12 +1,4 @@
-﻿*.exe
+
 *.o
 *.txt
-*.exe
-*.o
-*.exe
-*.exe
-*.o
-bin/Debug/VGTU_PROGRAMAVIMAS.exe
-obj/Debug/main.o
-*.o
 *.exe
