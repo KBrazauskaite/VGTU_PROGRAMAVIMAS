@@ -1,2 +1,2 @@
 # VGTU_PROGRAMAVIMAS
-1 versija
+[link] 1 versija
