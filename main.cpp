@@ -10,6 +10,7 @@ struct Studentas {
     string vardas;
     string pavarde;
     double vid = 0;
+    double med = 0;
     int egz = 0;
 };
 
