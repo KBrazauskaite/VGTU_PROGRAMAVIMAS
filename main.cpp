@@ -1,19 +1,27 @@
-#include <iostream>
-#include <vector>
-
+<<<<<<< HEAD
+#include<iostream>
+#include<stdio.h>
 using namespace std;
-
+struct studentai
+{
+       char sname[20];
+       int rollno;
+       int english, maths, science;
+};
 int main()
 {
-    vector <int> pav;
-    int k;
-    for (int i=0; i<5; i++)
-    {
-        cout<<"iveskite sveikaji skaiciu: ";
-        cin>>k;
-        pav.push_back(k);
-    }
-    for (int i: pav)
-        cout<<i<<endl;
-    return 0;
+       struct studentai s[100];
+       int n, i;
+       cout<<"\n iveskite studentu skaiciu : ";
+       cin>>n;
+       for(i=0; i<=n-1; i++)
+       {
+              cout<<"\n sudento vardas :  ";
+              cin>>s[i].sname;
+              cout<<"\n iveskite pazymi ";
+              cout<<"\n ---------------------";
+
+       }
+
+       return 0;
 }
