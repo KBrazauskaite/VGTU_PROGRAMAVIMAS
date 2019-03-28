@@ -22,6 +22,11 @@ void tikrinimas(string &pavadinimas){ //funkcijos prototipas;
                 }
             }
         }
+if (sk>=0 && sk<=10)
+{
+
+}
+
 int main();
     int studsk;
     cout<<"iveskite studentu skaiciu: "; // ivedamas studentu skaicius, naudojant struktura
