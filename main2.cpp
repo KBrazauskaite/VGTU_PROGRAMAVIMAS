@@ -8,6 +8,6 @@ struct stud {
 };
 int main();
     int studsk;
-    cout<<"iveskite studentu skaiciu: ";
+    cout<<"iveskite studentu skaiciu: "; // ivedamas studentu skaicius, naudojant struktura
     cin>>studsk;
     stud studentas[100];
