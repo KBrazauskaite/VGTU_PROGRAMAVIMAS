@@ -1,26 +1,17 @@
-
-#include<iostream>
+#include <iostream>
+#include <string>
 
 using namespace std;
-struct studentai
+struct stud
 {
-       char var[20];
+       string var, pav;
 
 };
 int main()
 {
-       struct studentai s[100];
-       int n, i;
-       cout<<"\n iveskite studentu skaiciu : ";
-       cin>>n;
-       for(i=0; i<=n-1; i++)
-       {
-              cout<<"\n sudento vardas :  ";
-              cin>>s[i].var;
-              cout<<"\n iveskite pazymi ";
-              cout<<"\n ---------------------";
-
-       }
-
+       int studsk;
+       cout<<"iveskite studentu skaiciu : ";
+       cin>>studsk;
+       stud studentas[100];
        return 0;
 }
