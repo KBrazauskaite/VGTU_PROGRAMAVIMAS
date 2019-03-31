@@ -64,4 +64,15 @@ int main();
             pazymiai.push_back(k);
             }
         }
+        cin.clear();
+        int x=pazymiai.size();
+        inf(x){
+        int sum=0
+        for (int j=0; j<x; j++){
+            sum+=pazymiai[i];
+            if(x%2 && j==(n/2+1)){
+                studentas[i].med=pazymiai[i];
+            else if (!(n%2) && (j==(n/2)))
+            }
+        }
     }
