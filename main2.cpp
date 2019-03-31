@@ -44,3 +44,24 @@ int main();
     cout<<"iveskite studentu skaiciu: "; // ivedamas studentu skaicius, naudojant struktura
     cin>>studsk;
     stud studentas[100];
+    for (int i=0; i<s; i++){
+        cout<<"iveskite sudento varda: "<<endl;
+        cin>>studentas[i].var; //ivedamas studento vardas
+        tikrinimas(studentas[i].var); //tikrinama ar vardas susideda is pirmos didziosios raides ir sekanciu mazuju raidziu, ir ar nera skaiciu
+        cout<<"iveskite studento pavarde: "<<endl;//tikrinama ar teisingai ivesta pavarde
+        cin>>studentas[i].pav
+        vector<int>pazymiai;
+        int k;
+        while(cin){
+            cout<<"iveskite pazymi: "<<endl;
+            k=skaicius();
+            while (k<1 || k>10){ //tikrinamas pazymys, ar jis nera mazesnis uz 0 ir didesnis uz 10
+                cout<<"netinkamas pazymys!"<<endl;
+                cout<<"iveskite pazymi: "<<endl;
+                k=skaicius();
+            }
+        if (cin){
+            pazymiai.push_back(k);
+            }
+        }
+    }
