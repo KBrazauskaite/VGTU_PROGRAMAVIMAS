@@ -8,7 +8,7 @@ using namespace std;
 
 struct stud {
     string var, pav;
-    double vid=0;
+    double vid=0, med=0;
     int egz=0;
 };
 
@@ -24,6 +24,7 @@ void tikrinimas(string &pavadinimas){ //funkcijos prototipas;
                     cout<<"neteisingai ivestas vardas!"<<endl; // jei salyga netinka i ekrana isvedama klaida ir kartojamas vardo ivedimas
                     cout<<"iveskite studento varda: "<<endl;
                     cin>>pavadinimas;
+                    i=0;
                 }
             }
         }
@@ -41,12 +42,17 @@ int skaicius(){
     return stoi(n);
 }
 int main();
-    ifstream myReadFile;
-    myReadFile.open("text.txt");
     int studsk;
     cout<<"iveskite studentu skaiciu: "; // ivedamas studentu skaicius, naudojant struktura
     cin>>studsk;
     stud studentas[100];
+
+    }
+    if (!cin){ //jei false
+        return 1; //griztama i funkcija
+    }
+    return stoi(n);
+  }
     for (int i=0; i<s; i++){
         cout<<"iveskite sudento varda: "<<endl;
         cin>>studentas[i].var; //ivedamas studento vardas
@@ -75,8 +81,15 @@ int main();
             sum+=pazymiai[i];
             if(x%2 && j==(n/2+1)){
                 studentas[i].med=pazymiai[i];
-            else if (!(n%2) && (j==(n/2)))
+            }else if (!(n%2) && (j==(n/2))){
+                studentas[i].med+=pazymiai[i];
             }
         }
+    if(!(n%2)){
+        studentas[i].med/=2;
     }
-        myReadFile.close();
+    studentas[i].vid=sum/n;
+    cout<<"iveskite egzamino bala: ";
+    studentas[i].egz=skaicius();
+    }
+  }
