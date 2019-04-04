@@ -13,7 +13,7 @@ struct stud {
 
 void tikrinimas(string &pavadinimas){ //funkcijos prototipas;
     const int x=pavadinimas.length();   // ivedama konstanta vardo ilgiui; pirmoji didzioji raide, visos kitos mazosios
-    for (int i=(pavadinimas[0]>=65 && pavadinimas[0]<=90; i<n; i++){ //pagal ASCII lentele uzduodama reiksme pirmajam masyvo nariui nuo A (65) iki Z (90)
+    for (int i=(pavadinimas[0]>=65 && pavadinimas[0]<=90); i<x; i++){ //pagal ASCII lentele uzduodama reiksme pirmajam masyvo nariui nuo A (65) iki Z (90)
        if (pavadinimas[i]>=97 && pavadinimas[i]<=122 && pavadinimas[0]>=65 && pavadinimas[0]<=90) // tikrinama kad sekantys masyvo nariai butu mazosios raides nuo a (97) iki z (122)
             {
                 continue; // jei salyga tenkinama, ivedami kiti punktai;
@@ -97,5 +97,22 @@ int main();
         cout<<"Vardas\t"<<"Pavarde\t"<<"Galutinis (Vid.)"<<endl;}
 
     cout<<"------------------------------------"<<endl;
+    double y=0;
+    for(int i=0; i<s; i++, y=0) //galutinio balo skaiciavimas
+    {
+        cout<<studentas[i].var<<"\t"<<stuentas[i].pav<<"\t";
+    }
+        if (mediana)
+        {
+            y=0.4*studentas[i].med;
+        }
+            else
+            {
+            y=0.4*studentas[i].vid;
+            }
 
-
+        y+=0.6*studentas[i].egz;
+        cout<<fixed<<setprecision(2)<<y<<endl;
+      }
+      return 0;
+      }
