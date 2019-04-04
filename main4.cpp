@@ -2,7 +2,8 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-
+#include "struktura.h"
+#include "funcija.h"
 
 using std::cout;
 using std::cin;
