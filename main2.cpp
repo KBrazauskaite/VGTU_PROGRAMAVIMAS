@@ -2,7 +2,6 @@
 #include <string>
 #include <vector>
 #include <iomanip>
-#include <fstream>
 
 using namespace std;
 
@@ -39,7 +38,7 @@ int skaicius(){
     if (!cin){ //jei false
         return 1; //griztama i funkcija
     }
-    return stoi(n);
+    return stoi(n); //int
 }
 int main();
     int studsk;
@@ -47,12 +46,6 @@ int main();
     cin>>studsk;
     stud studentas[100];
 
-    }
-    if (!cin){ //jei false
-        return 1; //griztama i funkcija
-    }
-    return stoi(n);
-  }
     for (int i=0; i<s; i++){
         cout<<"iveskite sudento varda: "<<endl;
         cin>>studentas[i].var; //ivedamas studento vardas
@@ -77,7 +70,7 @@ int main();
         int x=pazymiai.size();
         inf(x){
         int sum=0
-        for (int j=0; j<x; j++){
+        for (int j=0; j<x; j++){ //tikrinama mediana
             sum+=pazymiai[i];
             if(x%2 && j==(n/2+1)){
                 studentas[i].med=pazymiai[i];
@@ -88,8 +81,21 @@ int main();
     if(!(n%2)){
         studentas[i].med/=2;
     }
-    studentas[i].vid=sum/n;
+    studentas[i].vid=sum/n; //vidurkio skaiciavimas
     cout<<"iveskite egzamino bala: ";
     studentas[i].egz=skaicius();
     }
   }
+    cout<<"mediana (T) arba vidurkis (F): "; //parenkama ar norima isvesti mediana ar vidurki
+    char ats;
+    cin>>ats;
+    bool mediana false;
+    if (ats=='T' || ats=='t') {
+            mediana=true;
+            cout<<"Vardas\t"<<"Pavarde\t"<<"Galutinis (Med.)"<<endl;
+    } else {
+        cout<<"Vardas\t"<<"Pavarde\t"<<"Galutinis (Vid.)"<<endl;}
+
+    cout<<"------------------------------------"<<endl;
+
+
