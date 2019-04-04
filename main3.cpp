@@ -55,3 +55,18 @@ int main(){
 
     }
 }
+
+ void irasas::Vid(){
+        vid=0;
+        for (int a : paz)
+            vid+=a;
+        vid=double(vid)/paz.size();
+    }
+    void irasas::Med(){
+        sort(paz.begin(), paz.end());
+        paz.size()%2==0 ? med=(paz[paz.size()/2-1]+paz[paz.size()/2])/2 : med=paz[paz.size()/2];
+    }
+    void irasas::Rez(){
+        rez=0.4*vid+0.6*egz;
+    }
+
