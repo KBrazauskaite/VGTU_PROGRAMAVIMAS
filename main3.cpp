@@ -40,3 +40,18 @@ int main(){
         else {cout<<"netinkamas pazymys, bandykite dar karta: ";}
         cin>>temp_nd;
     }
+     temp.Vid(); temp.Med(); temp.Rez();
+    duomenubaze.push_back (temp);
+    cout<<"Iveskite egzamino bala: "<<endl;
+    cin>>temp_egz;
+    cout<<"ar ivesite dar? t/ kitoks kl: ";
+    cin>>paklausimas;
+    } while (paklausimas == 't');
+
+    for (auto a: duomenubaze){
+        cout<<"Vardas\t"<<"Pavarde\t"<<"Galutinis(Med.)/Galutinis(Vid.)"<<endl;
+        cout<<temp_var<<"    "<<temp_pav<<"       "<<a.med<<"        "<<a.vid<<endl;
+        cout<<"---------------------------------"<<endl;
+
+    }
+}
