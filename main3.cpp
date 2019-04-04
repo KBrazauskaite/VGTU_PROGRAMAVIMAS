@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <fstream>
 
 using std::cout;
 using std::cin;
@@ -20,6 +21,12 @@ struct irasas { // sukuriama programos struktura
 };
 
 int main(){
+    ifstream inFile;
+    inFile.open("kursiokai.txt");
+    if (inFile.fail()){ //ieskoma klaidos, ar failas egzistuoja
+        cerr<<"Neimanoma atidaryti failo!!!"<<endl;
+        exit(1);
+    }
     vector <irasas> duomenubaze; // sukuriamas vektorius duomenu ivedimui
     irasas temp;
     string temp_var, temp_pav;
