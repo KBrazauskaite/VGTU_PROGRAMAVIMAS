@@ -9,7 +9,7 @@ using std::endl;
 using std::vector;
 using std::string;
 
-struct irasas {
+struct irasas { // sukuriama programos struktura
     string var, pav;
     int egz, sk;
     vector <int> paz;
@@ -20,7 +20,7 @@ struct irasas {
 };
 
 int main(){
-    vector <irasas> duomenubaze;
+    vector <irasas> duomenubaze; // sukuriamas vektorius duomenu ivedimui
     irasas temp;
     string temp_var, temp_pav;
     int temp_nd, temp_egz;
