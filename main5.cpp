@@ -80,4 +80,14 @@ int main(){
     void irasas::Rez(){
         rez=0.4*vid+0.6*egz;
     }
+void copy_file (const char* src_file, const char* dest_file, int num_bytes) // sukuriama funkcija kad kad generuotu atsitikrtinius failus
+{
+    char* buffer = new char[num_bytes];
+    std::ifstream infile(src_file, std::ios::binary);
+    std::ofstream outfile(dest_file, std::ios::binary);
 
+    infile.read(buffer, num_bytes);
+    outfile.write(buffer, num_bytes);
+
+    delete[] buffer;
+}
