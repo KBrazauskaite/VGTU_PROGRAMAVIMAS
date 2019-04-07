@@ -73,7 +73,7 @@ int main(){
     void irasas::Rez(){
         rez=0.4*vid+0.6*egz;
     }
-void copy_file (const char* src_file, const char* dest_file) // sukuriama funkcija kad kad generuotu atsitikrtinius failus
+void copy_file (const char* src_file, const char* dest_file, int num_bytes) // sukuriama funkcija kad kad generuotu atsitikrtinius failus
 {
     infile(src_file, std::ios::binary);
     outfile(dest_file, std::ios::binary);
