@@ -9,6 +9,8 @@ using std::cin;
 using std::endl;
 using std::vector;
 using std::string;
+using std::ifstream;
+using std::ofstream;
 
 struct irasas { // sukuriama programos struktura
     string var, pav;
@@ -73,9 +75,8 @@ int main(){
     }
 void copy_file (const char* src_file, const char* dest_file) // sukuriama funkcija kad kad generuotu atsitikrtinius failus
 {
-    char* buffer = new char[num_bytes];
-    std::ifstream infile(src_file, std::ios::binary);
-    std::ofstream outfile(dest_file, std::ios::binary);
+    infile(src_file, std::ios::binary);
+    outfile(dest_file, std::ios::binary);
 
     infile.read(buffer, num_bytes);
     outfile.write(buffer, num_bytes);
