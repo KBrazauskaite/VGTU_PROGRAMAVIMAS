@@ -21,16 +21,7 @@ struct irasas { // sukuriama programos struktura
 };
 
 int main(){
-    ifstream fr;
-    fr.open("kursiokai.txt");
-    if (inFile.fail()){ //ieskoma klaidos, ar failas egzistuoja
-        cerr<<"Neimanoma atidaryti failo!!!"<<endl;
-        exit(1);
-    }
-    string var, pav, a, b;
-    fr>>var>>pav>>a>>b;
-    fr.close();
-
+    
     vector <irasas> duomenubaze; // sukuriamas vektorius duomenu ivedimui
     irasas temp;
     string temp_var, temp_pav;
