@@ -2,6 +2,8 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <stdio.h>
+#include <stdlib.h>
 
 using std::cout;
 using std::cin;
@@ -54,6 +56,8 @@ int main(){
         cout<<"---------------------------------"<<endl;
 
     }
+    for(int i = 0; i < 10; ++i) // atsitiktiniu skaiciu generavimas
+        printf(" %d ", rand()); 
 }
 
  void irasas::Vid(){  //skaiciuojamas vidurkis
