@@ -21,7 +21,7 @@ struct irasas { // sukuriama programos struktura
 
 int main(){
     vector <irasas> duomenubaze; // sukuriamas vektorius duomenu ivedimui
-    irasas temp;
+    irasas temp; //sukuriamas laikinas kintamasis
     string temp_var, temp_pav;
     int temp_nd, temp_egz;
     char paklausimas;
@@ -33,7 +33,7 @@ int main(){
     cout<<"Iveskite pazymius: "<<endl;
     cin>>temp_nd;
     while (temp_nd !=0){
-        if (temp_nd>0 && temp_nd<11)
+        if (temp_nd>0 && temp_nd<11) // sukuriamas ciklas kad butu tikrinama ar pazymys yra tinkamas
         {
             temp.paz.push_back(temp_nd);
         }
@@ -49,7 +49,7 @@ int main(){
     } while (paklausimas == 't');
 
     for (auto a: duomenubaze){
-        cout<<"Vardas\t"<<"Pavarde\t"<<"Galutinis(Med.)/Galutinis(Vid.)"<<endl;
+        cout<<"Vardas\t"<<"Pavarde\t"<<"Galutinis(Med.)/Galutinis(Vid.)"<<endl; 
         cout<<temp_var<<"    "<<temp_pav<<"       "<<a.med<<"        "<<a.vid<<endl;
         cout<<"---------------------------------"<<endl;
 
