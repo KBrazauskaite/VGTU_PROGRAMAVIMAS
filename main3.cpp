@@ -56,17 +56,17 @@ int main(){
     }
 }
 
- void irasas::Vid(){
+ void irasas::Vid(){  //skaiciuojamas vidurkis
         vid=0;
         for (int a : paz)
             vid+=a;
         vid=double(vid)/paz.size();
     }
-    void irasas::Med(){
+    void irasas::Med(){    // skaiciuojama  mediana
         sort(paz.begin(), paz.end());
         paz.size()%2==0 ? med=(paz[paz.size()/2-1]+paz[paz.size()/2])/2 : med=paz[paz.size()/2];
     }
-    void irasas::Rez(){
+    void irasas::Rez(){  // apskaiciuojamas  galutinis rezultatas
         rez=0.4*vid+0.6*egz;
     }
 
