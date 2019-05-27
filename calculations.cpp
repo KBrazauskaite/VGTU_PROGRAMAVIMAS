@@ -3,8 +3,8 @@
 #include <vector>
 #include <exception>
 
-using std::list
-using std::deque
+using std::list;
+using std::deque;
 
 void calculate_med_avg( Student &s, const std::vector<unsigned> &grades ) {
     if ( !grades.size() ) {
