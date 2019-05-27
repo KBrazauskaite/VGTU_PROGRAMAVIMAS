@@ -4,7 +4,7 @@
 #include <vector>
 #include <iomanip>
 
-void write_data( std::ostream &out, const std::vector<Student> &students ) {
+void write_data( std::ostream &out, const std::list<Student> &students ) {
     out << std::setw( 16 ) << std::left << "Name" << std::setw( 16 ) << "Surname"
         << std::setw( 17 ) << "Final (Avg.)" << "Final (Med.)" << std::endl;
     out << std::string( 61, '-' ) << std::endl;
