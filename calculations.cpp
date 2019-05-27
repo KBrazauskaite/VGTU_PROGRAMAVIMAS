@@ -10,7 +10,7 @@ void calculate_med_avg( Student &s, const std::vector<unsigned> &grades ) {
 
     unsigned sum = 0;
 
-    for ( std::vector<unsigned>::size_type i = 0, n = grades.size(); n != i; ++i ) {
+    for ( std::deque<unsigned>::size_type i = 0, n = grades.size(); n != i; ++i ) {
         if ( n % 2 && i == ( n / 2 ) ) {
             s.median = grades[ i ];
         } else if ( !( n % 2 ) && ( i == ( n / 2 ) || i == ( n / 2 + 1 ) ) ) {
