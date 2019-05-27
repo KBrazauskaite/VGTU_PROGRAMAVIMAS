@@ -3,6 +3,9 @@
 #include <vector>
 #include <exception>
 
+using std::list
+using std::deque
+
 void calculate_med_avg( Student &s, const std::vector<unsigned> &grades ) {
     if ( !grades.size() ) {
         throw std::overflow_error( "division by zero" );
