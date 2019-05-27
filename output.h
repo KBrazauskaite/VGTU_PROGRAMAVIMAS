@@ -4,4 +4,4 @@
 #include <iostream>
 #include <vector>
 
-void write_data( std::ostream &, const std::vector<Student> & );
+void write_data( std::ostream &, const std::list<Student> & );
