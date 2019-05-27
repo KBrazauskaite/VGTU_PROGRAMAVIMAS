@@ -6,6 +6,10 @@
 
 using std::list;
 using std::deque;
+using std::search;
+using std::copy;
+using std::remove_copy;
+
 
 void generate_random_grades( std::vector<unsigned> &grades, unsigned n, bool show_grades ) {
     unsigned k;
