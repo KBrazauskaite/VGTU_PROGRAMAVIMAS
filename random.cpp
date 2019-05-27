@@ -4,6 +4,9 @@
 #include <iostream>
 #include <cstdlib>
 
+using std::list;
+using std::deque;
+
 void generate_random_grades( std::vector<unsigned> &grades, unsigned n, bool show_grades ) {
     unsigned k;
 
