@@ -4,6 +4,9 @@
 using namespace std;
 using std::list;
 using std::deque;
+using std::search;
+using std::copy;
+using std::remove_copy;
 
 struct stud {
     string var, pav;
