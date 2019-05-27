@@ -2,6 +2,8 @@
 #include <string>
 
 using namespace std;
+using std::list;
+using std::deque;
 
 struct stud {
     string var, pav;
