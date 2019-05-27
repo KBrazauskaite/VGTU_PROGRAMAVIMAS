@@ -7,8 +7,8 @@
 #include <string>
 #include <exception>
 
-using std::list
-using std::deque
+using std::list;
+using std::deque;
 
 void get_input( std::string &input, const std::string &repeat ) {
     std::cin.clear();
