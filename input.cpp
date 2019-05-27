@@ -9,6 +9,9 @@
 
 using std::list;
 using std::deque;
+using std::search;
+using std::copy;
+using std::remove_copy;
 
 void get_input( std::string &input, const std::string &repeat ) {
     std::cin.clear();
