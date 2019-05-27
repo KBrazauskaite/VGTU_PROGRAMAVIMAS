@@ -5,6 +5,9 @@
 
 using std::list;
 using std::deque;
+using std::search;
+using std::copy;
+using std::remove_copy;
 
 struct Student {
     std::string name;
