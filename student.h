@@ -3,6 +3,9 @@
 #include <string>
 #include <vector>
 
+using std::list;
+using std::deque;
+
 struct Student {
     std::string name;
     std::string surname;
