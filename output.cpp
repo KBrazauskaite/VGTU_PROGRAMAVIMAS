@@ -6,6 +6,9 @@
 
 using std::list;
 using std::deque;
+using std::search;
+using std::copy;
+using std::remove_copy;
 
 void write_data( std::ostream &out, const std::list<Student> &students ) {
     out << std::setw( 16 ) << std::left << "Name" << std::setw( 16 ) << "Surname"
