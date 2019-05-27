@@ -12,5 +12,5 @@ struct Student {
     double finalScore   = 0;
 };
 
-std::vector<Student> generate_students( const unsigned );
-const std::vector<Student> categorize_students( std::vector<Student> & );
+std::list<Student> generate_students( const unsigned );
+const std::list<Student> categorize_students( std::list<Student> & );
