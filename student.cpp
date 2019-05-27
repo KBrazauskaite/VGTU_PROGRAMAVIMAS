@@ -7,6 +7,9 @@
 #include <algorithm>
 #include <iostream>
 
+using std::list;
+using std::deque;
+
 std::list<Student> generate_students( const unsigned n ) {
     std::list<Student> students;
     Student s;
