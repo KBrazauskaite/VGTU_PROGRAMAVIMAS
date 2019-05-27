@@ -4,8 +4,9 @@
 #include <string>
 #include <vector>
 
-using std::list
-using std::deque
+using std::list;
+using std::deque;
+
 
 void get_input( std::string &, const std::string & );
 void retrieve_text_input( std::string &, const std::string & );
