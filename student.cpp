@@ -9,6 +9,9 @@
 
 using std::list;
 using std::deque;
+using std::search;
+using std::copy;
+using std::remove_copy;
 
 std::list<Student> generate_students( const unsigned n ) {
     std::list<Student> students;
