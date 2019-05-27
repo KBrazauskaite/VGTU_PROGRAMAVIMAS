@@ -6,7 +6,9 @@
 
 using std::list;
 using std::deque;
-
+using std::search;
+using std::copy;
+using std::remove_copy;
 
 void get_input( std::string &, const std::string & );
 void retrieve_text_input( std::string &, const std::string & );
