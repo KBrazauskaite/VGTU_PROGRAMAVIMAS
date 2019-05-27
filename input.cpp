@@ -54,7 +54,7 @@ void read_from_file( std::vector<Student> &students ) {
         while ( !in.eof() ) {
             in >> s.name >> s.surname;
 
-            std::vector<unsigned> grades;
+            std::deque<unsigned> grades;
             unsigned k;
 
             for ( size_t i = 0; 5 != i; ++i ) {
@@ -91,7 +91,7 @@ void read_from_user( std::vector<Student> &students ) {
         std::cin >> ans;
         std::cin.ignore();
 
-        std::vector<unsigned> grades;
+        std::deque<unsigned> grades;
         unsigned k;
 
         if ( ans == 'Y' || ans == 'y' ) {
@@ -126,7 +126,7 @@ void read_from_user( std::vector<Student> &students ) {
     } while ( !std::cin.eof() && ( ans == 'y' || ans == 'Y' ) );
 }
 
-void read_data( std::vector<Student> &students ) {
+void read_data( std::deque<Student> &students ) {
     char ans;
 
     std::cout << "Read from file (Y/N): ";
