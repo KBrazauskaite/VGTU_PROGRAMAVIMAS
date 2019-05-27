@@ -5,6 +5,9 @@
 
 using std::list;
 using std::deque;
+using std::search;
+using std::copy;
+using std::remove_copy;
 
 void calculate_med_avg( Student &s, const std::vector<unsigned> &grades ) {
     if ( !grades.size() ) {
