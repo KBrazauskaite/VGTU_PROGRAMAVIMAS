@@ -11,8 +11,8 @@ using std::vector;
 using std::string;
 using std::ifstream;
 using std::ofstream;
-using std::list
-using std::deque
+using std::list;
+using std::deque;
 
 struct irasas { // sukuriama programos struktura
     string var, pav;
