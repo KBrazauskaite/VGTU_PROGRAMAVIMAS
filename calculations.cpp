@@ -6,23 +6,23 @@
 using std::list;
 using std::deque;
 
-void calculate_med_avg( Student &s, const std::vector<unsigned> &grades ) {
-    if ( !grades.size() ) {
+void calculate_med_avg( Student &s, const std::vector<unsigned> &pazymiai ) {
+    if ( !pazymiai.size() ) {
         throw std::overflow_error( "division by zero" );
     }
 
     unsigned sum = 0;
 
-    for ( std::deque<unsigned>::size_type i = 0, n = grades.size(); n != i; ++i ) {
+    for ( std::deque<unsigned>::size_type i = 0, n = pazymiai.size(); n != i; ++i ) {
         if ( n % 2 && i == ( n / 2 ) ) {
-            s.median = grades[ i ];
+            s.med =pazymiai[ i ];
         } else if ( !( n % 2 ) && ( i == ( n / 2 ) || i == ( n / 2 + 1 ) ) ) {
-            s.median += grades[ i ];
+            s.med += pazymiai[ i ];
         }
 
-        sum += grades[ i ];
+        sum+=pazymiai[ i ];
     }
 
-    s.median = ( grades.size() % 2 ) ? s.median : s.median / 2;
-    s.average = sum / grades.size();
+    s.med=(pazymiai.size() % 2 ) ? s.med : s.med / 2;
+    s.average = sum / pazymiai.size();
 }
