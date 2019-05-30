@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <chrono>
 #include <exception>
 
 using std::list;
@@ -141,4 +142,16 @@ void read_data( std::deque<Student> &students ) {
     } else {
         read_from_user( students );
     }
+    
+    
+    using namespace std::chrono; // sub-namespace std::chrono;
+    int main() {    
+        auto start = high_resolution_clock::now();   
+        v.push_back(i);    
+        auto end = high_resolution_clock::now();     
+        std::cout<< diff.count() << " s\n";    
+        std::cout << duration_cast<milliseconds>(end-start).count() << " msec\n";
+    }
 }
+
+    
