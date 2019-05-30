@@ -94,11 +94,11 @@ void read_from_user( std::vector<Student> &students ) {
         std::cin >> ans;
         std::cin.ignore();
 
-        std::deque<unsigned> grades;
+        std::deque<unsigned>pazymiai;
         unsigned k;
 
         if ( ans == 'Y' || ans == 'y' ) {
-            generate_random_grades( grades, read_number( "Homework grade count" ), true );
+            generate_random_pazymiai( pazymiai, read_number( "Homework grade count" ), true );
         } else {
             std::cout << "Press CTRL + Z to terminate input." << std::endl;
 
@@ -112,7 +112,7 @@ void read_from_user( std::vector<Student> &students ) {
         }
 
         try {
-            calculate_med_avg( s, grades );
+            calculate_med_avg( s, pazymiai);
         } catch ( const std::overflow_error &e ) {
             std::cerr << "Overflow error: " << e.what() << std::endl;
             std::terminate();
