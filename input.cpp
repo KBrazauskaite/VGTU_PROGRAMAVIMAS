@@ -144,7 +144,7 @@ void read_data( std::deque<Student> &students ) {
     }
     
     
-    using namespace std::chrono; // sub-namespace std::chrono;
+    using namespace std::chrono; 
     int main() {    
         auto start = high_resolution_clock::now();   
         v.push_back(i);    
